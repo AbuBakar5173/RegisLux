@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu';
+    background-color: #f1f1f1;
+    cursor: default;
+}
+
+:root {
+    --maincolor: #0F2182;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    object-fit: cover;
+}
+
+nav,
+header,
+main {
+    width: 95vw;
+    margin: 0px auto;
+}
+
+nav {
+    height: 80px;
+    width: 95vw;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>a.logo {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Cinzel';
+}
+
+nav .links {
+    display: flex;
+    gap: 13px;
+}
+
+nav .links a {
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+nav .links a:hover {
+    color: #776;
+}
+
+nav .btn {
+    display: flex;
+    gap: 13px;
+}
+
+nav .btn button {
+    border: none;
+    background: transparent;
+    font-size: 17px;
+    color:#777;
+    transition: all 0.3s ease;
+}
+
+nav .btn button:hover{
+    color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 110px);
+    align-items: center;
+}
+
+header .left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 600px;
+}
+
+header .left h1 {
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+header .left h1 :first-child {
+    color: var(--maincolor);
+}
+
+header .left .about {
+    color: #b4b4b4;
+}
+
+header .left .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    border-radius: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 18px;
+}
+
+header .left .btn i {
+    background-color: white;
+    color: #000;
+    font-size: 25px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+header .left .loc .material-symbols-outlined {
+    background: none;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 8px;
+    color: #000;
+}
+
+header .left .loc {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 22px;
+    color: grey;
+}
+
+header img {
+    width: 700px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.seprator {
+    font-size: 35px;
+    font-weight: 500;
+    margin: 50px 0;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list .items {
+    padding: 14px;
+    border-radius: 18px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.list .items:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.items img {
+    border-radius: 14px;
+    height: 280px;
+    width: 310px;
+}
+
+main .list .items .info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 3px;
+    background: #fff;
+}
+
+main .list .items .info h4,
+main .list .items .info p,
+main .list .items .info h3 {
+    background: transparent;
+}
+
+main .list .items .info h3 {
+    color: rgb(11, 181, 11);
+}
+
+main .list .items .info span {
+    background-color: var(--maincolor);
+    color: #fff;
+    padding: 14px 8px;
+    border-radius: 9px;
+    text-align: center;
+}
+
+footer {
+    padding: 100px 5vw;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    color: #fff;
+}
+
+footer h3 {
+    color: #fff;
+    background: none;
+    font-size: 48px;
+    width: 45vw;
+}
+
+footer .right {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    align-items: flex-end;
+    background: none;
+    width: 45vw;
+}
+
+footer .right .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: none;
+}
+
+footer .right .links a {
+    margin: 0 10px;
+    font-size: 12px;
+    color: #777;
+    background: none;
+    transition: all 0.3s ease;
+}
+
+footer .right .links a:hover {
+    color: #fff;
+}
+
+footer .social {
+    background: none;
+    margin: 0 15px;
+}
+
+footer .right .social a {
+    background: none;
+    color: #777;
+}
+
+footer .right .social i {
+    background: none;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+footer .right .social i:hover {
+    color: #00ffff;
+}
+
+footer p {
+    background: none;
+    font-size: 20px;
+    color: #777;
+}
+
+
+/* Large desktops and laptops */
+@media only screen and (min-width: 1280px) {}
+
+/* Small desktops and laptops */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {}
+
+
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+
+    nav,
+    header,
+    main {
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    nav a.logo {
+        display: none;
+    }
+
+    nav .links a {
+        font-size: 12px;
+    }
+
+    header {
+        height: fit-content;
+    }
+
+    header .left h1 span {
+        font-size: 36px;
+    }
+
+    header .about p {
+        font-size: 14px;
+    }
+
+    header .left .btn {
+        padding: 6px;
+        font-size: 14px;
+        width: 120px;
+    }
+
+    header .left .btn i,
+    header .left .loc .material-symbols-outlined {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    header .left .loc {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    header img {
+        width: 350px;
+    }
+
+    main .list .items {
+        width: 40%;
+        height: 40%;
+    }
+
+    main .list .items img {
+        width: 100%;
+        height: 100%;
+    }
+
+    main .list {
+        justify-content: space-evenly;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .seprator {
+        text-align: center;
+    }
+
+    footer h3 {
+        font-size: 28px;
+        padding: 15px;
+    }
+
+    footer .links a {
+        font-size: 8px;
+        margin: 4px;
+    }
+
+    footer .right p {
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width:452px) {
+    header .left h1 span{
+        font-size: 16px;
+    }
+
+    header img{
+        width: 69%;
+        border-radius: 15px;
+    }
+
+    header .left .about{
+        font-size: 10px;
+    }
+
+    header .left .btn i{
+        font-size: 11px;
+    }
+
+    header .left .btn{
+        font-size: 12px;
+        width: 90px;
+        gap: 9px;
+    }
+
+    main .list .items .info{
+        font-size: 12px;
+    }
+
+    main .list .item .info span{
+        font-size: 16px;
+    }
+
+    footer{
+        padding: 20px 0;
+    }
+
+    footer h3{
+        font-size: 18px;
+    }
+
+    footer .right .links{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    footer .right{
+        gap: 15px;
+    }
+
+}
